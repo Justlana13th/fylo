@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Start of Navbar */
+.navbar {
+    background-color: hsl(217, 28%, 15%);
+    height: 70px;
+    padding: 80px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px hsl(0, 0%, 100%) solid;
+}
+/* End of Navbar */
+
+/* Start of Hero */
+.hero {
+    background-color: hsl(217, 28%, 15%);
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 200px;
+}
+
+.container .hero-content {
+    text-align: center;
+    padding: 25px;
+}
+
+.container .hero-content img {
+    width: 500px;
+}
+
+.container .hero-content h1 {
+    margin: 30px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .hero-content p {
+    color: rgb(201, 190, 190);
+    margin-bottom: 30px;
+}
+
+.container .hero-content .button {
+    color: hsl(0, 0%, 100%);
+    padding: 10px 60px;
+    border-radius: 20px;
+    background: hsl(176, 68%, 64%);
+}
+/* End of Hero */
+
+/* Start of Features */
+.features {
+    background-color: hsl(218, 28%, 13%);
+    padding: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.container .card {
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.features .container .card h3 {
+    margin: 10px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.features .container .card p {
+    color: rgb(201, 190, 190);
+}
+/* End of Features */
+
+/* Start of Content */
+.content {
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content .grid {
+    align-items: center;
+    gap: 30px;
+}
+
+.content .grid .img-productive {
+    width: 450px;
+}
+
+.content .grid h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.content .grid p {
+    color: rgb(201, 190, 190);
+    margin: 10px 0;
+    font-size: 0.7rem;
+}
+
+.button-productive {
+    display: inline-flex;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    border-bottom: 1px hsl(176, 68%, 64%) solid;
+    align-items: center;
+}
+
+.button-productive a {
+    color: hsl(176, 68%, 64%);
+    margin-right: 5px;
+}
+/* End of Content */
+
+/* Start of Testimonials */
+.testimonials {
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 130px;
+    padding-bottom: 75px;
+    background-image: url('../images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: top 110px left 175px;
+}
+
+.testimonials .container .card {
+    background-color: hsl(219, 30%, 18%);
+    padding: 20 10px;
+}
+
+.testimonials .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonials .container .card p {
+    font-size: 0.8rem;
+    padding: 20px 10px;
+    text-align: left;
+    color: hsl(0, 12%, 76%);
+}
+
+.card .profile img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card .profile h5 {
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.card .profile span {
+    font-size: 0.7rem;
+    color: rgb(201, 190, 190);
+}
+
+.card .profile .name {
+    text-align: left;
+}
+
+/* End of Testimonials */
+
+/* Start of Email */
+.email {
+    background-color:  hsl(218, 28%, 13%);
+    display: flex;
+    position: relative;
+}
+
+.card-email {
+    background-color: hsl(217, 28%, 15%);
+    padding: 35px 50px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+
+.card-email h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.card-email p {
+    color: hsl(0, 28%, 91%);
+    margin: 20px 0;
+    font-size: 0.8rem;
+}
+
+.input input {
+    border-radius: 20px;
+    padding: 10px 60px;
+    margin-right: 15px;
+    border: none;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.input a {
+    color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    background-color: hsl(176, 68%, 64%);
+    font-size: 0.7rem;
+    border-radius: 20px;
+}
+/* End of Email */
+
+/* Start of Footer */
+.footer {
+    background-color: hsl(216, 53%, 9%);
+    padding-bottom: 30px;
+    padding-top: 180px;
+}
+
+.footer .container .logo {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.footer .container .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: flex-start;
+    gap: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer .container .grid a {
+    color: rgb(201, 190, 190)
+}
+
+.footer .container .grid nav li {
+    margin-bottom: 5px;
+}
+
+.container .grid .location {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container .grid .location img {
+    margin-right: 15px;
+}
+
+.container .grid .contact .phone img {
+    margin-right: 10px;
+}
+
+.container .grid .contact .phone {
+    margin-bottom: 10px;
+}
+
+.container .grid .contact .email-footer img {
+    margin-right: 10px;
+}
+/* End of Footer */
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .content .grid {
+        grid-template-columns: 1fr;
+        display: grid;
+        justify-content: center;
+    }
+
+    .content .grid img  {
+        justify-self: center;
+    }
+
+    .content .grid .production-text  {
+        text-align: center;
+    }
+
+    .features .grid, .testimonials .grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .testimonials {
+        background-color: hsl(218, 28%, 13%);
+        padding-top: 130px;
+        padding-bottom: 75px;
+        background-image: url('../images/bg-quotes.png');
+        background-repeat: no-repeat;
+        background-position: top 110px left 50px;
+    }
+
+    .footer .container .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);;
+        gap: 30px;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .card-email {
+        background-color: hsl(217, 28%, 15%);
+        padding: 35px 50px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: 100px;
+    }
+
+    .email .container .card-email .input {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .input input {
+        border-radius: 20px;
+        padding: 10px 30px;
+        margin-right: 15px;
+        border: none;
+    }
+    
+    .input input:focus {
+        outline: none;
+    }
+    
+    .input a {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(176, 68%, 64%);
+        font-size: 0.7rem;
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .content .container .img-productive {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .navbar {
+        height: 120px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-top: 5px;
+      }
+
+      .hero {
+        background-color: hsl(217, 28%, 15%);
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        background-image: url('../images/bg-curvy-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 400px;
+        background-size: 900px;
+    }  
+
+    .container .hero-content img {
+        width: 300px;
+        margin-top: 20px;
+        justify-self: center;
+        text-align: center;
+    }  
+
+    .card-email {
+        background-color: hsl(217, 28%, 15%);
+        padding: 35px 30px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: 100px;
+    }
+
+    .email .container .card-email .input {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .input input {
+        border-radius: 20px;
+        padding: 10px 30px;
+        margin-right: 15px;
+        border: none;
+    }
+    
+    .input input:focus {
+        outline: none;
+    }
+    
+    .input a {
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(176, 68%, 64%);
+        font-size: 0.7rem;
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+
+}
